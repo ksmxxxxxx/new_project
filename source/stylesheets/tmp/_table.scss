@@ -1,0 +1,61 @@
+//=======================================================
+//
+//  zigexn default template
+//  name : _table.scss
+//  date : 2016.10.21
+//  author : vnc
+//  version : 0.9.1
+//
+//=======================================================
+
+// type default
+table {
+  width: 100%;
+  table-layout: fixed;
+  background: #fff;
+  th,
+  td {
+    padding: ( 7 / $default-fz)*1rem;
+    border: 1px solid #ccc;
+  }
+  th{
+    font-weight: bold;
+  }
+}
+
+/*doc
+---
+title: table
+name: table
+category: basics
+---
+
+
+### table
+
+```html_example
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>性</th>
+      <th>名</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>じげん</td>
+      <td>ぶ</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>じげん</td>
+      <td>ぶー</td>
+    </tr>
+  </tbody>
+</table>
+
+```
+*/

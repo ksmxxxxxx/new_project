@@ -1,0 +1,301 @@
+//=======================================================
+//
+//  zigexn default template
+//  name : _helper.scss
+//  date : 2016.10.21
+//  author : vnc
+//  version : 0.9.1
+//
+//=======================================================
+
+// '$default-fz' into _typography.scss
+
+//font size helper
+//====================================
+@mixin font-size($size: $default-fz) {
+  font-size: $size * 1px;
+  font-size: ($size / $default-fz) * 1rem;
+}
+
+@for $font-size-value from 8 through 36 {
+  .fz#{$font-size-value}px{
+    font-size: ($font-size-value / $default-fz) * 1rem !important;
+  }
+}
+
+$fontweight-value: normal, bold;
+@each $value in $fontweight-value {
+  .font-weight-#{$value}{
+    font-weight: #{$value};
+  }
+}
+
+$text-deco-value: none, underline, line-through;
+@each $value in $text-deco-value{
+  .text-deco-#{$value}{
+    text-decoration: #{$value};
+  }
+}
+
+/*doc
+
+---
+title: font helper
+name: font
+category: helpers
+---
+
+### font-size helper
+`.fz**px`で任意のフォントサイズをインライン、またはブロックレベルで指定できる。
+実際は`rem`でコンパイルされるので、正確にはpx相当のrem単位でコンパイルされている。
+
+```html_example
+<div class="fz36px">これは36px相当のフォントサイズ</div>
+<section>
+  <a href="#" class="fz14px">このリンクテキストは14px相当のフォントサイズ</a>
+</section>
+<p>フォントサイズは最高36px相当まで指定出来ます。<small>最詳サイズは8px相当です。</small></p>
+```
+
+### weight helper
+
+```html_example
+<p class="font-weight-bold">ボールドテキスト</p>
+<p class="font-weight-normal">ノーマルテキスト</p>
+```
+
+### decoration helper
+
+```html_example
+<p class="font-deco-underline">下線テキスト</p>
+<p class="font-deco-line-through">打ち消し線テキスト</p>
+<p><a href="" class="font-deco-line-none">デコレーションなしテキスト</a></p>
+```
+
+*/
+
+//margin helper
+//====================================
+@for $marginsize-value from 0 through 30{
+  .m#{$marginsize-value}px{
+    margin: ($marginsize-value / $default-fz) * 1rem !important;
+  }
+  .mt#{$marginsize-value}px{
+    margin-top: ($marginsize-value / $default-fz) * 1rem !important;
+  }
+  .mr#{$marginsize-value}px{
+    margin-right: ($marginsize-value / $default-fz) * 1rem !important;
+  }
+  .mb#{$marginsize-value}px{
+    margin-bottom: ($marginsize-value / $default-fz) * 1rem !important;
+  }
+  .ml#{$marginsize-value}px{
+    margin-left: ($marginsize-value / $default-fz) * 1rem !important;
+  }
+}
+
+/*doc
+
+---
+title: margin helper
+name: margin
+category: helpers
+---
+
+### `margin`のヘルパー
+`.fz**px`で任意のフォントサイズをインライン、またはブロックレベルで指定できる。
+実際は`rem`でコンパイルされるので、正確にはpx相当のrem単位でコンパイルされている。
+
+```html_example
+  <div class="m30px">このボックスは`margin:20px`相当</div>
+  <section class="mb15px">
+    <p>このセクションは`margin-bottom:15px`相当</p>
+    <a href="#" class="fz14px">このリンクテキストは14px相当のフォントサイズ</a>
+  </section>
+  <p class="ml30px">この段落は`margin-left:36px`相当</p>
+
+```
+*/
+//padding helper
+//====================================
+@for $paddingsize-value from 0 through 30{
+  .p#{$paddingsize-value}px{
+    padding: ($paddingsize-value / $default-fz) * 1rem !important;
+  }
+  .pt#{$paddingsize-value}px{
+    padding-top: ($paddingsize-value / $default-fz) * 1rem !important;
+  }
+  .pr#{$paddingsize-value}px{
+    padding-right: ($paddingsize-value / $default-fz) * 1rem !important;
+  }
+  .pb#{$paddingsize-value}px{
+    padding-bottom: ($paddingsize-value / $default-fz) * 1rem !important;
+  }
+  .pl#{$paddingsize-value}px{
+    padding-left: ($paddingsize-value / $default-fz) * 1rem !important;
+  }
+}
+
+/*doc
+
+---
+title: padding helper
+name: paddin
+category: helpers
+---
+
+### `margin`のヘルパー
+`.fz**px`で任意のフォントサイズをインライン、またはブロックレベルで指定できる。
+実際は`rem`でコンパイルされるので、正確にはpx相当のrem単位でコンパイルされている。
+
+```html_example
+  <div class="m30px">このボックスは`margin:20px`相当</div>
+  <section class="mb15px">
+    <p>このセクションは`margin-bottom:15px`相当</p>
+    <a href="#" class="fz14px">このリンクテキストは14px相当のフォントサイズ</a>
+  </section>
+  <p class="ml30px">この段落は`margin-left:36px`相当</p>
+
+```
+*/
+// alignment helper
+//====================================
+$alignment-value: center, right, left;
+@each $value in $alignment-value{
+  .align-#{$value}{
+    text-align: #{$value} !important;
+  }
+}
+
+$varticalalignment-value: top, bottom, middle, baseline;
+@each $value in $varticalalignment-value{
+  .valign-#{$value}{
+    vertical-align: #{$value} !important;
+  }
+}
+
+/*doc
+
+---
+title: alignment helper
+name: alignment
+category: helpers
+---
+
+### alignment helper
+
+```html_example
+<p class="align-center">中央揃えテキスト</p>
+<p class="align-right">右揃えテキスト</p>
+<p class="align-left">左揃えテキスト</p>
+```
+*/
+
+// position helper
+//====================================
+$position-value: static, relative, absolute, fixed;
+@each $value in $position-value{
+  .pos-#{$value}{
+    position: #{$value} !important;
+  }
+}
+
+/*doc
+
+---
+title: position helper
+name: position
+category: helpers
+---
+
+### position helper
+
+```html_example
+<div class="pos-relative">
+  <div class="pos-absolute"></div>
+  <div class="pos-fixed"></div>
+</div>
+```
+*/
+// display helper
+//====================================
+$dis-value: inline,inline-block, block, table, table-cell, none;
+@each $value in $dis-value{
+  .d-#{$value}{
+    display: #{$value} !important;
+    @if $value == table{
+      table-layout: fixed !important;
+    }
+  }
+}
+
+/*doc
+
+---
+title: display helper
+name: display
+category: helpers
+---
+
+### display helper
+
+```html_example
+<div class="d-block">ブロック</div>
+<div class="d-inline-block">インラインブロック</div>
+<div class="d-inline">インライン</div>
+<div class="d-table">
+  <div class="d-table-cell">テーブルセル</div>
+  <div class="d-table-cell">テーブルセル</div>
+</div>
+<div class="d-none">非表示</div>
+```
+*/
+// overflow helper
+//====================================
+$ov-value: hidden, visible, scroll;
+@each $value in $ov-value{
+  .ov-#{$value}{
+    overflow: #{$value} !important;
+  }
+}
+
+/*doc
+
+---
+title: overflow helper
+name: overflow
+category: helpers
+---
+
+### overflow helper
+
+```html_example
+<div class="ov-hidden">非表示文字の高さは存在する。`height`で高さを指定して、その領域以上にオブジェクトが存在すれば余剰分は見切れる。</div>
+<div class="ov-visible">表示</div>
+<div class="ov-scroll">強制的にスクロール表示</div>
+```
+*/
+// float helper
+//====================================
+$fl-value: left, right;
+@each $value in $fl-value{
+  .fl-#{value}{
+    float: #{$value} !important;
+  }
+}
+
+/*doc
+
+---
+title: float helper
+name: float
+category: helpers
+---
+
+### float helper
+
+```html_example
+<div class="fl-left">非表示文字の高さは存在する。`height`で高さを指定して、その領域以上にオブジェクトが存在すれば余剰分は見切れる。</div>
+<div class="fl-right">表示</div>
+```
+*/

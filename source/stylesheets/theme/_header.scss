@@ -1,0 +1,54 @@
+//=========================================
+//
+// zigexn z_template style guide header.scss
+//    date: 2017.3.22
+//  author: vancho
+// version: 0.9.1
+//
+//=========================================
+
+.main-header{
+  padding: 16px;
+  background: $primary-color-dark;
+  color: $primary-color-text;
+  .category{
+    ul{
+      padding-left: 0;
+      margin: 0;
+    }
+    li{
+      display: inline-block;
+      padding-left: 16px;
+      list-style: none;
+      a{
+        color: $primary-color-text;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.blocks-area{
+  ul{
+    padding-left: 0;
+    margin: 16px 0;
+    text-align: center;
+  }
+  li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 16px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    border-right: 1px solid $primary-color-light;
+    &:last-child{
+      border-right: none;
+    }
+    a{
+      color: $accent-color;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}

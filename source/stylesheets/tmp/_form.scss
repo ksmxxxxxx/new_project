@@ -1,0 +1,94 @@
+//=======================================================
+//
+//  zigexn default template
+//  name : _form.scss
+//  date : 2016.10.21
+//  author : vnc
+//  version : 0.9.1
+//
+//=======================================================
+// init
+button,
+input,
+select,
+textarea {
+  box-sizing: border-box;
+}
+
+// button
+input[type='button'],
+input[type='submit'],
+input[type='reset'],
+button {
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[disabled],
+input[disabled],
+button[disabled]{
+  box-shadow: none;
+  cursor: not-allowed;
+}
+select[disabled] > option{
+  
+}
+
+/*doc
+---
+title: form
+name: form
+category: basics
+---
+
+```html_example
+
+  <legend>Legend</legend>
+  <p>もっとも、オッペケペッポーの攻勢に、ぐぅのネを上げた紳士や淑女がいたかどうか…西洋カブレとは、要するに欧米文化への信奉者のこと。〈鰯ノ頭ヲ信心〉する者があるならヨーロッパやアメリカの文物を信仰する者がいても一向に不思議はない。信ずる者の強さで、依然グラス片手に舞踏会、アン・ドゥ・トロヮとやっていたように思われる。</p>
+  <form>
+    <h2>Form Element</h2>
+    <p>憶測になるが、むしろ辛かったのは庶民の中の飲んべぇ連中ではなかったか。ハイカラ族にユサぶりをかけた手前、泰西の酒には手を出しづらい。「なに、ビールだとぉ、べらぼーめ、こちとら人間サマでぃ、カニじゃあるめぇしアブクなんか飲めるかってんだ」などと強がりながらも、サゾ飲みたかったろうという気がする。</p>
+    <p><label for="text_field">テキストフィールド(text)：</label><br />
+    <input type="text" id="text_field" /></p>
+    <p><label for="text_area">テキストエリア(textarea)：</label><br />
+    <textarea id="text_area"></textarea></p>
+    <p><label for="select_element">セレクト(select)：</label><br />
+      <select name="select_element">
+      <optgroup label="Option Group 1">
+        <option value="1">オプション 1</option>
+        <option value="2">オプション 2</option>
+        <option value="3">オプション 3</option>
+      </optgroup>
+      <optgroup label="Option Group 2">
+        <option value="1">オプション 1</option>
+        <option value="2">オプション 2</option>
+        <option value="3">オプション 3</option>
+      </optgroup>
+    </select></p>
+    <p><label for="radio_buttons">ラジオボタン(radio)：</label><br />
+      <input type="radio" class="radio" name="radio_button" value="radio_1" /> ラジオボタン 1<br/>
+        <input type="radio" class="radio" name="radio_button" value="radio_2" /> ラジオボタン 2<br/>
+        <input type="radio" class="radio" name="radio_button" value="radio_3" /> ラジオボタン 3<br/>
+    </p>
+    <p><label for="checkboxes">チェックボックス(checkbox)：</label><br />
+      <input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> チェックボックス 1<br/>
+        <input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> チェックボックス 2<br/>
+        <input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> チェックボックス 3<br/>
+    </p>
+    <p><label for="password">パスワード(password)：</label><br />
+      <input type="password" class="password" name="password" />
+    </p>
+    <p><label for="file">ファイル(file)：</label><br />
+      <input type="file" class="file" name="file" />
+    </p>
+    <p><input class="button" type="reset" value="リセット(reset)" /> <input class="button" type="submit" value="サブミット(submit)" />
+    </p>
+  </form>
+</fieldset>
+```
+*/

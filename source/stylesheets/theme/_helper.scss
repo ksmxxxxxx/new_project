@@ -1,0 +1,21 @@
+//=========================================
+//
+// zigexn z_template style guide helper.scss
+//    date: 2017.3.22
+//  author: vancho
+// version: 0.9.1
+//
+//========================================-
+
+// caret helper
+.caret-right:before{
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  border-color: transparent;
+  border-width: 5px;
+  border-style: solid;
+  border-left-color: $primary-color-text;
+}

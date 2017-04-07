@@ -1,0 +1,65 @@
+//=======================================================
+//
+//  zigexn default template
+//  name : _typography.scss
+//  date : 2016.10.21
+//  author : vnc
+//  version : 0.9.1
+//
+//=======================================================
+// base font family
+$default-fz: 16;
+
+:root{
+  font-size: $default-fz + px;
+}
+body{
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック体", "Yu Gothic", 'meiryo', 'メイリオ', 'Osaka', 'ＭＳ Ｐゴシック', sans-serif;
+  font-size: 1em;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  background: #fff;
+}
+
+/*doc
+---
+  title: typography
+  name: typography
+  category: basics
+---
+
+```html_example
+<h1>見出し 1</h1>
+<h2>見出し 2</h2>
+<h3>見出し 3</h3>
+<h4>見出し 4</h4>
+<h5>見出し 5</h5>
+<h6>見出し 6</h6>
+<hr />
+<h1 id="paragraph">パラグラフ(p)</h1>
+<img style="width:250px;height:125px;float:right" src="images/css_gods_language.png" alt="CSS | God's Language" />
+<p>洋酒といえば、誰でも最初に思い浮かべるのがウイスキー。<a href="#" title="テストリンク">テストリンク(a)</a>いわば洋酒のシンボル的な存在なのだが、英語表記が［一般に〔米〕では Whiskey,〔英〕では Whisky.］であることはあまり知られていない。米英両国では、このスペルの差で自国産と輸入品を区別しているという。わが和製ウイスキーの “Whisky”という英国式表示は、手本にしたスコッチのフォルムに倣ったものであり、それ以上の意味はないようだ。カナ表記にしても、ごくまれに〈ウヰスキー〉という書き方を見かけるが、これとて差別化を意図したものではなく単にカナづかいの時代性にすぎない。</p>
+<p>現在、カナ表記は〈<em>ウイスキー(em)</em>〉に一本化しており、そこに国産・舶来の区別はない。最近は価格面での差もちぢまり、20年前に ￥10,000 だった本場のスコッチが半値近くになるなど、ウイスキーは一層ポピュラーなものになってきた。しかし、消費量についていえば、洋酒のトップは何といってもビールだろう。よっぽどの下戸はともかく、まず誰でもタシナミ程度には口にする。</p>
+<hr />
+<h1 id="list_types">リスト要素</h1>
+<h3>定義型リスト(dl)</h3>
+<dl>
+  <dt>定義型リスト　用語</dt>
+  <dd>定義型リスト　定義</dd>
+</dl>
+<h3>順序付きリスト(ol)</h3>
+<ol>
+  <li>リストアイテム 1</li>
+  <li>リストアイテム 2</li>
+  <li>リストアイテム 3</li>
+</ol>
+<h3>並列列挙リスト(ul)</h3>
+<ul>
+  <li>リストアイテム 1</li>
+  <li>リストアイテム 2</li>
+  <li>リストアイテム 3</li>
+</ul>
+<hr />
+```
+
+*/

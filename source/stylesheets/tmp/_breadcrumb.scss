@@ -1,0 +1,54 @@
+//=======================================================
+//
+//  zigexn default template
+//  name : _breadcrumb.scss
+//  date : 2016.10.21
+//  author : vnc
+//  version : 0.9.1
+//
+//=======================================================
+
+/* breadcrumb */
+.breadcrumb{
+  display: inline-block;
+  vertical-align: middle;
+  .breadcrumb-list{
+    position: relative;
+    list-style: none;
+    padding-left: 0;
+    .breadcrumb-step{
+      float: left;
+      font-weight: normal;
+      &:after{
+        content: "＞";
+        display: inline;
+        margin-left: .5rem;
+      }
+      &:last-child:after{
+        content: "";
+      }
+    }
+  }
+}
+
+/*doc
+---
+title: breadcrumb
+name: breadcrumb
+category: basics
+---
+
+### breadcrumb
+
+```html_example
+<div class="breadcrumb">
+  <div class="breadcrumb-list">
+    <div class="breadcrumb-step">パンくず1</div>
+    <div class="breadcrumb-step"><a href="#">パンくず2</a></div>
+    <div class="breadcrumb-step"><a href="#">パンくず3</a></div>
+    <div class="breadcrumb-step">パンくず4</div>
+  </div>
+</div>
+```
+
+*/

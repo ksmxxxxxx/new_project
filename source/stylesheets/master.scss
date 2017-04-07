@@ -1,0 +1,27 @@
+@charset 'utf-8';
+//=======================================================
+//
+//  zigexn default template
+// (forked z_template)
+//  name : master.scss
+//  date : 2016.10.21
+//  author : vnc
+//  version : 0.9
+//
+//=======================================================
+
+@import 'tmp/_normalize';
+@import 'tmp/_typography';
+@import 'tmp/_flexbox';
+@import 'tmp/_form';
+@import 'tmp/_table';
+@import 'tmp/_breadcrumb';
+@import 'tmp/_helper';
+@import 'tmp/_common';
+
+@import 'theme/_color';
+@import 'theme/_typography';
+@import 'theme/_header';
+@import 'theme/_footer';
+@import 'theme/_helper';
+

@@ -1,0 +1,181 @@
+//=======================================================
+//
+//  zigexn default template
+//  name : _common.scss
+//  date : 2016.10.21
+//  author : vnc
+//  version : 0.9.1
+//
+//=======================================================
+$zfooter-bg-color: #e3e3e3;
+$zfooter-text-color: #333;
+
+.zigexn-footer{
+  padding: 1em 0;
+  width: 100%;
+  background: $zfooter-bg-color;
+  text-shadow: 1px 1px 0 #fff;
+  color: $zfooter-text-color;
+  .side-left,
+  .side-right{
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+  }
+  a{
+    color: $zfooter-text-color;
+  }
+}
+.zigexn-group-links{
+  font-size: 12px;
+  nav{
+    ul{
+      padding: 0 20px;
+      margin: 0;
+      text-align: center;
+    }
+    li{
+      display: inline-block;
+      margin-bottom: 8px;
+      margin-right: 8px;
+      padding-right: 8px;
+      &:last-child{
+        border-right: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+.footer-inner{
+  display: table;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.side-left{
+  .corporate-info{
+    display: table;
+    width: 100%;
+  }
+  .corporate-name{
+    display: table-cell;
+    padding-right: 20px;
+    width: 90px;
+    vertical-align: middle;
+  }
+  .corporate-detail{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .corporate-menu{
+    margin-bottom: 0;
+    padding-left: 0;
+    margin: 0;
+    width: 300px;
+    list-style: none;
+    li{
+      display: inline-block;
+      margin-right: 20px;
+      &:before{
+        content: '';
+        float: left;
+        overflow: hidden;
+        display: block;
+        margin-top: 10px;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-width: 3px;
+        border-style: solid;
+        border-left-color: $zfooter-text-color;
+      }
+    }
+  }
+  .copyright{
+    margin: 0;
+    font-size: 8px;
+    line-height: 1.2;
+  }
+}
+.side-right{
+  .privacy{
+    display: table;
+    float: right;
+    figure,
+    figcaption{
+      display: table-cell;
+      vertical-align: middle;
+    }
+    figure{
+      margin: 0;
+      padding-right: 20px;
+      width: 55px;
+    }
+    figcaption{
+      b,small{
+        display: block;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+/*doc
+---
+  title: zigexn 共通フッター
+  name: zigexn_footer
+  category: basics
+---
+
+じげん社運営のサービスサイト（PC）に共通して入れるfooterのテンプレート。
+
+```html_example
+<div class="zigexn-footer">
+  <div class="zigexn-group-links">
+    <nav>
+      <ul>
+        <li><a href="https://arubaito-ex.jp/" target="_blank">バイトならアルバイトEX</a></li>
+        <li><a href="http://tenshoku-ex.jp/" target="_blank">正社員採用なら転職EX</a></li>
+        <li><a href="https://haken-ex.jp/" target="_blank">派遣の求人なら派遣EX</a></li>
+        <li><a href="https://kangokyujin-ex.jp/" target="_blank">看護の求人なら看護求人EX</a></li>
+        <li><a href="http://yakuzaishikyujin-ex.jp/" target="_blank">薬剤師の求人なら薬剤師EX</a></li>
+        <li><a href="https://smocca.jp/" target="_blank">賃貸物件をお探しなら賃貸スモッカ</a></li>
+        <li><a href="https://premium.smocca.jp/" target="_blank">高級賃貸ならプレミアムスモッカ-ex</a></li>
+        <li><a href="https://www.mysumi.jp/" target="_blank">不動産売却査定ならマイスミEX</a></li>
+        <li><a href="http://jutakukonyu-ex.jp/" target="_blank">住宅購入をお考えなら住宅購入EX</a></li>
+        <li><a href="http://hikkoshi-ex.jp/" target="_blank">引越し見積もりなら引越し見積もりEX</a></li>
+        <li><a href="http://areabusinessmarketing.com/" target="_blank">不動産ホームページ制作ならエリアビジネスマーケティング</a></li>
+        <li><a href="http://provider-ex.jp/" target="_blank">プロバイダー比較ならプロバイダーEX</a></li>
+        <li><a href="http://kuruma-ex.jp/usedcar" target="_blank">中古車検索なら中古車EX</a></li>
+        <li><a href="https://kuruma-ex.jp/sell" target="_blank">車買取なら車買取EX</a></li>
+        <li><a href="http://konkatsu-ex.jp/" target="_blank">結婚相談所への資料請求なら婚活EX</a></li>
+        <li><a href="http://ryokou-ex.jp/" target="_blank">国内旅行比較なら旅行EX</a></li>
+        <li><a href="http://zigexn.co.jp/shopping" target="_blank">ショッピングならSHOP ZIGEXN</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer-inner">
+    <div class="side-left">
+      <div class="corporate-info">
+        <div class="corporate-name"><img src="images/zigexn.svg" alt="株式会社じげん"></div>
+        <div class="corporate-detail">
+          <ul class="corporate-menu">
+            <li><a href="http://zigexn.co.jp">株式会社じげん</a></li>
+            <li><a href="http://zigexn.co.jp/service">サービス一覧</a></li>
+          </ul>
+          <p class="copyright">&copy; ZIGExN Co., Ltd. ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </div>
+    <div class="side-right">
+      <div class="privacy">
+        <figure><img src="images/privacy.svg" alt="プライバシーマーク"></figure>
+        <figcaption>
+          <b>安心への取り組み</b>
+          <small>株式会社じげんはプライバシーマークを取得してます。</small>
+        </figcaption>
+      </div>
+    </div>
+  </div>
+</div>
+```
+*/
