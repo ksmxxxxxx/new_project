@@ -192,3 +192,14 @@ SassとかCssとかimgとか読み込ませたりするのにLoaderを使うの�
 
 
 私は英語も得意じゃないですし、webpackも触り初めて1週間経つか経たないかのレベルしかさわれてないので、もし「ここ違うよ！」っていうのがあれば、遠慮なくコメントいただけるとうれしいです(･∀-`; )
+
+__参考__
+- [Getting Started（webpack2公式）](https://webpack.js.org/guides/get-started/)
+- [Migrating from v1 to v2](https://webpack.js.org/guides/migrating/)
+- [webpack 入門](http://qiita.com/soarflat/items/28bf799f7e0335b68186)
+- [タスクランナーを使わずにnpm+webpackのみでWebアプリ開発](http://qiita.com/nihsuy/items/9b7effe47ebe5869fd3f)
+- [step by stepで始めるwebpack](http://qiita.com/howdy39/items/48d85c430f90a21075cd)
+- [Webpackってどんなもの？](http://qiita.com/kmszk/items/45fb4690ace32216ca25)
+- [webpackでes6+React+Redux+Sassの環境を構築してみる(sourceMap,uglify,minimizeも)](http://qiita.com/keitaMatsuo/items/65d7a613918747930be9)
+- [【webpack2対応】俺が作り上げたSCSSのビルド環境を晒す【リントもあるよ】](http://qiita.com/Mic-U/items/d222a677d80a5ab46e2c)
+- [webpack.config.jsの読み方、書き方](http://dackdive.hateblo.jp/entry/2016/04/13/123000)
